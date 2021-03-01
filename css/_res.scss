@@ -1,0 +1,49 @@
+@media (max-width:480px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 160px;
+       
+        padding: 0 20px;
+
+        opacity: 0;
+        transform: matrix(1, 0, 0, 1, 0, -50);
+        animation: head 1s forwards;
+
+        @keyframes head {
+            100% {
+                opacity: 1;
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+        }
+        a {
+            position: relative;
+            overflow: hidden;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            padding: 8px 5px;
+            margin: 0 15px;
+            color: white;
+        }
+
+        .Start {
+            background: white;
+            color: #042825;
+            border-radius: 40px;
+            overflow: hidden;
+            font-size: 1rem;
+            padding: 12px 24px;
+            margin: 0 20px;
+            font-weight: 700;
+            max-height: 52px;
+        }
+
+    }
+
+    .bg_white,.up{display:none;}
+
+//480 end
+}
